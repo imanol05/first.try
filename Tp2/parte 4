@@ -1,0 +1,9 @@
+total = 0
+print("Bienvenido, a continuacion le pediremos que ingrese por teclado cuantos numeros desea utilizar para realizar una media aritmetica")
+cantidad = int(input("Cuantos numeros va a ingresar:"))
+for x in range(cantidad):
+  num = int(input("Ingrese un numero entero:"))
+  total += num
+  print("La suma total es de:",total)
+media = total/cantidad
+print("La media aritmetica es de:",media)

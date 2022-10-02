@@ -1,0 +1,35 @@
+print("Bienvenido al programa de usos multiples con controladores de flujo\nElija la opcion de que desea realizar introduciendo el indice de su opcion:")
+opcion = int(input("""1.Mostrar una suma de dos números
+2.Mostrar una resta de dos números (el primero menos el segundo)
+3.Mostrar una multiplicación de los dos números
+4.Si elige esta opción se interrumpirá la impresión del menú y el programa finalizará
+-------->"""))
+while opcion != 4:
+  if opcion == 1:
+    num_1 = int(input("Por favor ingrese un numero entero: "))
+    num_2 = int(input("Por favor ingrese otro numero entero: "))
+    sum_total = num_1 + num_2
+    print("La suma de los dos numeros ingresados es:",sum_total)
+    break
+  elif opcion == 2: 
+    num_1 = int(input("Por favor ingrese un numero entero: "))
+    num_2 = int(input("Por favor ingrese otro numero entero: "))
+    rest_total = num_1 - num_2
+    print("La resta de los dos numeros ingresados es:",rest_total)
+    break
+  elif opcion == 3: 
+    num_1 = int(input("Por favor ingrese un numero entero: "))
+    num_2 = int(input("Por favor ingrese otro numero entero: "))
+    mult_total = num_1 * num_2
+    print("La multiplicacion de los dos numeros ingresados es:",mult_total)
+    break
+  else:
+    print("\n")
+    print('*'*82)
+    print("La opcion elegida no esta disponible, por favor elija una mostrada a continuacion")
+    print('*'*82)
+    opcion = int(input("""\n1.Mostrar una suma de dos números
+2.Mostrar una resta de dos números (el primero menos el segundo)
+3.Mostrar una multiplicación de los dos números
+4.Si elige esta opción se interrumpirá la impresión del menú y el programa finalizará
+-------->"""))

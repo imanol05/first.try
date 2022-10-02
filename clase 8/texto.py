@@ -1,0 +1,6 @@
+archivo_abierto = open('clase 8/datos.txt', 'w')
+archivo_abierto.write("Isaac\nHollow Knight")
+archivo_abierto = open(r'clase 8/datos.txt', 'r', encoding = 'utf-8')
+print(archivo_abierto.readline())
+print(archivo_abierto.readline())
+print("pene")
